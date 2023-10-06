@@ -10,30 +10,30 @@ print "Digite seu nome de heroi: "
 nome = gets.chomp
 
 print "Digite a sua quantidade de xp entre 1 a 10.000: "
-experiencia = gets.chomp.to_i
+nivel = gets.chomp.to_i
 
-case experiencia
+case nivel
 
     when 0..1000
-    experiencia = "Ferro"
+    nivel = "Ferro"
 
     when 2001..5000
-    experiencia = "Bronze"
+    nivel = "Bronze"
 
     when 5001..7000
-    experiencia = "Prata"
+    nivel = "Prata"
 
     when 7001..8000
-    experiencia = "Ouro"
+    nivel = "Ouro"
 
     when 8001..9000
-    experiencia = "Platina"
+    nivel = "Platina"
 
     when 9001..1000
-    experiencia = "Imortal"
+    nivel = "Imortal"
   
     else
-    experiencia = "Radiante"
+    nivel = "Radiante"
 end
-puts "O Herói de nome #{nome} está no nível de #{experiencia}"
+puts "O Herói de nome #{nome} está no nível de #{nivel}"
 
